@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-label="Replaceable adventure placeholder">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf9"/><stop offset=".45" stop-color="#bce9d8"/><stop offset="1" stop-color="#ff9f7d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg5)"/>
+  <path d="M120 760c150-92 286-114 408-66 139 54 250 38 333-48 63-65 136-94 219-87v641H120z" fill="#241f2f" opacity=".1"/>
+  <g transform="translate(254 230)">
+    <rect x="0" y="0" width="692" height="692" rx="346" fill="#fffdf9" opacity=".84"/>
+    <path d="M346 94c94 0 180 38 242 100L346 346z" fill="#f4bd4f"/>
+    <path d="M588 194c62 62 100 148 100 242H346z" fill="#f07186" opacity=".82"/>
+    <path d="M688 436c0 94-38 180-100 242L346 436z" fill="#1e9b9a" opacity=".74"/>
+    <path d="M588 678c-62 62-148 100-242 100V436z" fill="#7b5bd6" opacity=".68"/>
+    <circle cx="346" cy="436" r="158" fill="#fffdf9"/>
+    <rect x="240" y="318" width="212" height="236" rx="22" fill="#eaf9f4"/>
+    <path d="M278 498c38-54 80-65 126-32 32-54 72-62 121 32z" fill="#1e9b9a" opacity=".62"/>
+    <circle cx="402" cy="384" r="34" fill="#ff9f7d"/>
+  </g>
+  <path d="M172 240c88 38 146 37 174-3 34-49-16-103-71-70-48 29-34 108 25 118 62 10 139-40 231-151" fill="none" stroke="#f07186" stroke-width="13" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-label="Replaceable soft memory placeholder">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34314a"/><stop offset=".58" stop-color="#7b5bd6"/><stop offset="1" stop-color="#ffd9cf"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg4)"/>
+  <g fill="#fffdf9" opacity=".78">
+    <circle cx="164" cy="166" r="5"/><circle cx="250" cy="292" r="7"/><circle cx="466" cy="144" r="6"/><circle cx="782" cy="234" r="5"/>
+    <circle cx="1030" cy="168" r="8"/><circle cx="946" cy="386" r="5"/><circle cx="134" cy="486" r="6"/>
+  </g>
+  <g transform="translate(230 336)">
+    <rect x="0" y="0" width="740" height="520" rx="42" fill="#fffdf9"/>
+    <rect x="58" y="58" width="624" height="324" rx="30" fill="#eaf9f4"/>
+    <circle cx="504" cy="166" r="72" fill="#f4bd4f"/>
+    <path d="M116 344c102-130 203-154 302-72 90-124 176-131 260 72z" fill="#1e9b9a" opacity=".64"/>
+    <path d="M190 438h360" stroke="#f07186" stroke-width="20" stroke-linecap="round"/>
+  </g>
+  <path d="M276 912c82 50 175 75 278 75 125 0 250-36 375-109" fill="none" stroke="#fffdf9" stroke-width="16" stroke-linecap="round" opacity=".7"/>
+  <circle cx="284" cy="912" r="22" fill="#ff9f7d"/>
+  <circle cx="929" cy="878" r="22" fill="#bce9d8"/>
+</svg>

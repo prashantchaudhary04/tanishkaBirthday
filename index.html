@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Tanishka</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/sister-placeholder-1.svg" alt="">
+      </div>
+      <div class="hero__content">
+        <p class="eyebrow">From your lovely brother PRASHANT ❤️</p>
+        <h1>Happy Birthday, Tanishka 🎂</h1>
+        <p class="hero__note">
+          Today is your special day. Wishing you smiles, success, good health, and lots of happy moments 💖
+        </p>
+        <div class="hero__actions">
+          <button class="primary-btn" id="surpriseBtn" type="button">Start the surprise ✨</button>
+          <a class="ghost-btn" href="#gallery">See memories 💝</a>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">scroll</div>
+    </section>
+
+    <section class="message-band" id="letter">
+      <div class="section-heading">
+        <p class="eyebrow">Birthday wishes ✨</p>
+        <h2>May your year be bright and beautiful 💕</h2>
+      </div>
+      <div class="letter">
+        <p>Dear Tanishka, ❤️</p>
+        <p>
+          Wishing you a very Happy Birthday filled with laughter, surprises, cake, blessings, and everything that makes you smile 💖
+        </p>
+        <p>
+          May this new year of your life bring you more confidence, great memories, exciting chances, and success in everything you do ✨
+        </p>
+        <p class="signature">Best wishes from your Brother, PRASHANT ❤️</p>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">Replace these with her real photos 💝</p>
+        <h2>Six favorite-memory frames 💕</h2>
+      </div>
+      <div class="gallery-grid">
+        <button class="photo-card" type="button" data-caption="The first smile of every celebration.">
+          <img src="assets/p2.jpeg" alt="Replaceable birthday memory placeholder 1">
+          <span>Her smile 🎀</span>
+        </button>
+        <button class="photo-card" type="button" data-caption="The partner in all family chaos and laughter.">
+          <img src="assets/p3.jpeg" alt="Replaceable birthday memory placeholder 2">
+          <span>Sometimes Model 📸 </span>
+        </button>
+        <button class="photo-card" type="button" data-caption="The little wins that deserve the loudest cheers.">
+          <img src="assets/p1.jpeg" alt="Replaceable birthday memory placeholder 3">
+          <span>Soft Memories 🫶</span>
+        </button>
+        <button class="photo-card" type="button" data-caption="The quiet talks that somehow fix everything.">
+          <img src="assets/p4.jpeg" alt="Replaceable birthday memory placeholder 4">
+          <span>Cutie Pie 🦋</span>
+        </button>
+        <button class="photo-card" type="button" data-caption="The trips, treats, and tiny adventures.">
+          <img src="assets/p6.jpeg" alt="Replaceable birthday memory placeholder 5">
+          <span>Cherished ✨</span>
+        </button>
+        <button class="photo-card" type="button" data-caption="The star of the day, every day.">
+          <img src="assets/p5.jpeg" alt="Replaceable birthday memory placeholder 6">
+          <span>Sarpanch Madam 👑💐</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="surprise-zone" id="surprise">
+      <div class="section-heading">
+        <p class="eyebrow">Tap the gifts 🎁</p>
+        <h2>Small wishes, hidden for you 💖</h2>
+      </div>
+      <div class="gift-row">
+        <button class="gift" type="button" data-wish="May your birthday be full of smiles, fun, and sweet surprises 💖">
+          <span class="gift__lid"></span><span class="gift__box"></span><span class="gift__text">1</span>
+        </button>
+        <button class="gift" type="button" data-wish="May this year bring success, confidence, and amazing opportunities ✨">
+          <span class="gift__lid"></span><span class="gift__box"></span><span class="gift__text">2</span>
+        </button>
+        <button class="gift" type="button" data-wish="May you stay healthy, happy, blessed, and always shining ❤️">
+          <span class="gift__lid"></span><span class="gift__box"></span><span class="gift__text">3</span>
+        </button>
+      </div>
+      <p class="wish-output" id="wishOutput">Choose a gift to reveal a wish 💝</p>
+    </section>
+
+    <section class="cake-section" id="cake-party">
+      <div class="section-heading">
+        <p class="eyebrow">Birthday celebration 🎈</p>
+        <h2>Cut the cake together 🎂</h2>
+      </div>
+      <div class="cake-stage" id="cakeStage">
+        <div class="balloons" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <button class="primary-btn celebration-btn" id="celebrationBtn" type="button">Bring the cake 🎂</button>
+        <button class="cake" id="cakeBtn" type="button" aria-label="Cut the birthday cake">
+          <span class="candle candle-one"><i></i></span>
+          <span class="candle candle-two"><i></i></span>
+          <span class="candle candle-three"><i></i></span>
+          <span class="cake__top"></span>
+          <span class="cake__cream"></span>
+          <span class="cake__base"></span>
+          <span class="cake__slice"></span>
+          <span class="knife" aria-hidden="true"></span>
+        </button>
+        <p class="cake-message" id="cakeMessage">Press the button, then tap the cake to cut it 💖</p>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <div class="section-heading">
+        <p class="eyebrow">Birthday blessings ❤️</p>
+        <h2>Wishing you these always ✨</h2>
+      </div>
+      <div class="promise-list">
+        <div><strong>Happiness 💖</strong><span>May every day bring a new reason to smile.</span></div>
+        <div><strong>Success ✨</strong><span>May your hard work turn into proud achievements.</span></div>
+        <div><strong>Good health ❤️</strong><span>May your year stay peaceful, positive, and full of energy.</span></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Memory preview">
+    <button class="lightbox__close" id="closeLightbox" type="button" aria-label="Close preview">x</button>
+    <img id="lightboxImage" src="assets/sister-placeholder-1.svg" alt="">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-label="Replaceable birthday queen placeholder">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe3a8"/><stop offset=".46" stop-color="#fff8f2"/><stop offset="1" stop-color="#d8f3eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg6)"/>
+  <g transform="translate(258 248)">
+    <rect x="44" y="86" width="596" height="608" rx="44" fill="#241f2f" opacity=".12"/>
+    <rect x="0" y="36" width="640" height="608" rx="44" fill="#fffdf9"/>
+    <path d="M180 112l60 72 80-112 80 112 60-72 44 168H136z" fill="#f4bd4f"/>
+    <circle cx="240" cy="184" r="18" fill="#fffdf9"/>
+    <circle cx="320" cy="142" r="18" fill="#fffdf9"/>
+    <circle cx="400" cy="184" r="18" fill="#fffdf9"/>
+    <rect x="88" y="318" width="464" height="226" rx="30" fill="#eaf9f4"/>
+    <path d="M136 506c68-86 134-100 198-42 58-88 126-98 204 42z" fill="#7b5bd6" opacity=".58"/>
+    <circle cx="412" cy="390" r="48" fill="#ff9f7d"/>
+    <path d="M168 582h304" stroke="#f07186" stroke-width="18" stroke-linecap="round"/>
+  </g>
+  <g fill="#f07186">
+    <path d="M132 480c-34-54-22-114 33-140 51 31 65 87 34 140z"/>
+    <path d="M1010 420c-34-54-22-114 33-140 51 31 65 87 34 140z"/>
+  </g>
+  <path d="M132 480c-18 70-8 134 31 193M1010 420c-20 76-14 142 20 197" fill="none" stroke="#241f2f" stroke-width="7" opacity=".25"/>
+</svg>

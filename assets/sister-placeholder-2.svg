@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-label="Replaceable family joy placeholder">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf9f4"/><stop offset=".48" stop-color="#fffdf9"/><stop offset="1" stop-color="#ffe3a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bg2)"/>
+  <path d="M0 826c155-76 306-82 452-18 151 66 302 59 454-22 100-53 198-72 294-56v470H0z" fill="#1e9b9a" opacity=".22"/>
+  <g transform="translate(246 280)">
+    <rect x="0" y="0" width="708" height="622" rx="42" fill="#241f2f" opacity=".12"/>
+    <rect x="36" y="36" width="636" height="550" rx="34" fill="#fffdf9"/>
+    <rect x="94" y="104" width="520" height="344" rx="28" fill="#ffd9cf"/>
+    <circle cx="230" cy="252" r="78" fill="#7b5bd6" opacity=".74"/>
+    <circle cx="354" cy="222" r="92" fill="#f07186" opacity=".82"/>
+    <circle cx="480" cy="260" r="74" fill="#ff9f7d" opacity=".86"/>
+    <path d="M151 395c78-84 155-91 232-22 75-69 153-63 232 22v53H151z" fill="#1e9b9a" opacity=".72"/>
+    <rect x="176" y="490" width="356" height="18" rx="9" fill="#f4bd4f"/>
+  </g>
+  <g fill="#f07186">
+    <circle cx="154" cy="210" r="28"/><circle cx="1025" cy="216" r="36"/><circle cx="1066" cy="960" r="24"/><circle cx="146" cy="1008" r="34"/>
+  </g>
+  <g fill="#f4bd4f">
+    <path d="M590 126l24 50 55 8-40 39 10 55-49-26-49 26 10-55-40-39 55-8z"/>
+    <path d="M940 524l18 37 41 6-30 29 7 41-36-19-37 19 7-41-30-29 42-6z"/>
+  </g>
+</svg>
