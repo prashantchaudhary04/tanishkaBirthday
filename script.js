@@ -10,14 +10,11 @@ const celebrationBtn = document.getElementById("celebrationBtn");
 const cakeStage = document.getElementById("cakeStage");
 const cakeBtn = document.getElementById("cakeBtn");
 const cakeMessage = document.getElementById("cakeMessage");
+const birthdaySong = document.getElementById("birthdaySong");
 
 let confetti = [];
 let animationFrame;
-let birthdayAudio = {
-  context: null,
-  interval: null,
-  playing: false
-};
+let songStarted = false;
 
 function resizeCanvas() {
   canvas.width = window.innerWidth * window.devicePixelRatio;
@@ -66,52 +63,19 @@ function burstConfetti(count) {
   drawConfetti();
 }
 
-function playTone(context, destination, frequency, startTime, duration) {
-  const oscillator = context.createOscillator();
-  const gain = context.createGain();
+function startBirthdaySong() {
+  if (!birthdaySong || songStarted) return;
 
-  oscillator.type = "triangle";
-  oscillator.frequency.setValueAtTime(frequency, startTime);
-  gain.gain.setValueAtTime(0, startTime);
-  gain.gain.linearRampToValueAtTime(0.08, startTime + 0.025);
-  gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
-
-  oscillator.connect(gain);
-  gain.connect(destination);
-  oscillator.start(startTime);
-  oscillator.stop(startTime + duration + 0.04);
-}
-
-function scheduleBirthdayTune() {
-  if (!birthdayAudio.context) return;
-
-  const context = birthdayAudio.context;
-  const master = context.createGain();
-  master.gain.value = 0.42;
-  master.connect(context.destination);
-  const melody = [
-    [392, 0.22], [392, 0.22], [440, 0.42], [392, 0.42], [523.25, 0.42], [493.88, 0.78],
-    [392, 0.22], [392, 0.22], [440, 0.42], [392, 0.42], [587.33, 0.42], [523.25, 0.78],
-    [392, 0.22], [392, 0.22], [784, 0.42], [659.25, 0.42], [523.25, 0.42], [493.88, 0.42], [440, 0.78],
-    [698.46, 0.22], [698.46, 0.22], [659.25, 0.42], [523.25, 0.42], [587.33, 0.42], [523.25, 0.95]
-  ];
-
-  let time = context.currentTime + 0.04;
-  melody.forEach(([frequency, duration]) => {
-    playTone(context, master, frequency, time, duration);
-    time += duration + 0.055;
+  birthdaySong.volume = 0.75;
+  birthdaySong.play().then(() => {
+    songStarted = true;
+  }).catch(() => {
+    songStarted = false;
   });
 }
 
-function startBirthdaySong() {
-  const AudioContext = window.AudioContext || window.webkitAudioContext;
-  if (!AudioContext || birthdayAudio.playing) return;
-
-  birthdayAudio.context = new AudioContext();
-  birthdayAudio.playing = true;
-  scheduleBirthdayTune();
-  birthdayAudio.interval = window.setInterval(scheduleBirthdayTune, 9800);
-}
+document.addEventListener("pointerdown", startBirthdaySong, { once: true });
+document.addEventListener("keydown", startBirthdaySong, { once: true });
 
 surpriseBtn.addEventListener("click", () => {
   burstConfetti(220);
@@ -153,7 +117,6 @@ document.querySelectorAll(".gift").forEach((gift) => {
 });
 
 celebrationBtn.addEventListener("click", () => {
-  startBirthdaySong();
   cakeStage.classList.add("is-ready");
   cakeStage.classList.remove("is-cut");
   celebrationBtn.textContent = "Cake and music playing 🎂";
